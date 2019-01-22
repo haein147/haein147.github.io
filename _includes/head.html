@@ -11,7 +11,9 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
   {% seo %}
-    
+    {% if post.use_math %}
+      {% include mathjax_support %} 
+    {% endif %}
 
   {% include google-analytics.html %}
 
