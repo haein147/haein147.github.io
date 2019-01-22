@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% if page.use_math %}
-      {% include mathjax_support %} 
-    {% endif %}
+  
 {% include head.html %}
 <body>
   <div class="content-container">
+    {% if page.use_math %}
+      {% include mathjax_support %} 
+    {% endif %}
     {{ content }}
     
     {% include footer.html %}
