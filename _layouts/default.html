@@ -4,7 +4,9 @@
 <body>
   <div class="content-container">
     {{ content }}
-
+    {% if page.use_math %}
+      {% include mathjax_support %} 
+    {% endif %}
     {% include footer.html %}
   </div>
 </body>
